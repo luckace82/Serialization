@@ -11,7 +11,7 @@ class Snippets(models.Model):
     created=models.DateTimeField(auto_now_add=True)
     title=models.CharField(max_length=100, blank=True,default='')
     code=models.TextField()
-    lineous=models.BooleanField(default=False)
+    linenos=models.BooleanField(default=False)
     language=models.CharField(choices=LANGUAGE_CHOICES,default='python',max_length=100)
     style= models.CharField(choices=LANGUAGE_CHOICES,default='friendly',max_length=100)
     
